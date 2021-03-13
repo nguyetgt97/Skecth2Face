@@ -4,6 +4,7 @@ import glob
 import os
 
 for fileImg in glob.glob("/home/nguyetgt/Projects/ChuyenDe1/Data_face_base/*.jpg"):
+#    image folder of your project
     img = cv2.imread(fileImg)
     # img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     imgName = os.path.splitext(os.path.basename(fileImg))[0]
